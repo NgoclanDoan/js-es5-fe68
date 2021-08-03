@@ -36,7 +36,6 @@ console.log(height);
 var weight = null; //object => bug
 console.log(typeof weight);
 
-
 /**
  * Hằng số
  */
@@ -48,8 +47,8 @@ const PI = 3.14;
  * - if else
  * - else if
  * - switch case
- * 
- * Phép so sánh: 
+ *
+ * Phép so sánh:
  * - ==; => chỉ so sánh giá trị
  * - ===; => so sánh cả giá trị và kiểu dữ liệu
  * - >, <, >=, <=, !=, !==
@@ -107,7 +106,7 @@ console.log(!(!A || B)); //true
 /**
  * Hàm (function)
  * - 3 loại: declaration func, expression func, arrow func (es6)
- * - Hàm không tham số, 
+ * - Hàm không tham số,
  * - Hàm có tham số,
  * - Hàm vừa có tham số vừa có giá trị trả về
  */
@@ -124,7 +123,7 @@ function sayHelloToSomeone(name) {
 //Hàm vừa có tham số vừa có giá trị trả về
 function calculateGPA(score1, score2, score3) {
     var gpa = (score1 + score2 + score3) / 3;
-    
+
     return gpa;
 }
 
@@ -132,3 +131,18 @@ sayHello();
 sayHelloToSomeone('Lan');
 var _gpa = calculateGPA(7, 8, 9);
 console.log(_gpa);
+
+//expression func
+var _sayHello = function (name) {
+    console.log('Hello' + name);
+};
+_sayHello('Tay');
+
+//Hoisting
+var demoHoisting;
+console.log(demoHoisting);
+var demoHoisting = 'hoisting';
+
+// Thay thế cho ifelse với những câu lệnh đơn giản
+// Ternary operator (toán tử 3 ngôi)
+1 == 1 ? console.log('Điều kiện đúng') : console.log('Điều kiện sai');
